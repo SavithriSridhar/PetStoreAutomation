@@ -1,0 +1,21 @@
+# Maven target folder (build output)
+target/
+
+# Test output and reports
+test-output/
+reports/
+extent-report/
+
+# Log files
+*.log
+/logs/
+PetStoreAutomation/*.log
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db

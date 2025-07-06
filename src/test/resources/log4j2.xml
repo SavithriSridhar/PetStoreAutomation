@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+ <Properties>
+        <Property name="logPattern">%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</Property>
+       <Property name="logFile">./logs</Property>
+       <Property name="logFileName">logs/automation.log</Property>
+       <Property name="logFilePattern">logs/automation-%d{yyyy-MM-dd}-%i.log.gz</Property>
+    </Properties>
+    
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${logPattern}"/>
+        </Console>
+
+        <RollingFile name="RollingFile" fileName="${logFileName}" filePattern="${logFilePattern}">
+            <PatternLayout pattern="${logPattern}" />
+            <Policies>
+				<!-- Roll file when it reaches 10MB -->
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+        	<AppenderRef ref="RollingFile"/>
+        </Root>
+    </Loggers>
+</Configuration>
+    

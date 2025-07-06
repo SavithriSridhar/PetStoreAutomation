@@ -1,0 +1,7 @@
+2025-07-05 22:49:19 INFO  api.test.UserTest - **************** Creating User *******************
+2025-07-05 22:49:22 INFO  api.test.UserTest - **************** User is created *******************
+2025-07-05 22:49:22 INFO  api.test.UserTest - **************** Reading User Info *******************
+2025-07-05 22:49:30 INFO  api.test.UserTest - **************** Updating User *******************
+2025-07-05 22:49:34 INFO  api.test.UserTest - **************** User Updated *******************
+2025-07-05 22:49:34 INFO  api.test.UserTest - **************** Deleting User *******************
+2025-07-05 22:49:35 INFO  api.test.UserTest - **************** User Deleted *******************
